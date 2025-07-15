@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class ShoppingCartCalculator {
 
     /**
-     * เขียน Javadoc ที่นี่เพื่ออธิบายกฎการทำงานและกรณีพิเศษ:
+     * ฟังก์ชั่นนี้จะทำการคำนวณราคาสินค้าแล้วก็จะสามารถเช็คได้ว่าใส่ code ส่วนลดไหมจะส่งค่ากลับเป็นราคาสินค้ารวม
      * <p>เงื่อนไขการทำงาน<p>
      * <ul>
      *      <li>ถ้ารายการสินค้าที่เข้ามาเป็น null หรือ Empty จะ return ค่าออกเป็น 0.0</li>
@@ -16,7 +16,7 @@ public class ShoppingCartCalculator {
      *      </li>
      * </ul>
      * 
-     * <li> ถ้าของราคาของและจำนวนของเป็นติดลบ จะข้ามสิ้นค้าชิ้นนั้นไป</li>
+     * 
      * 
      * @param การรับค่าเข้ามาจะเป็น Array List เก็บไว้ใน items
      * @return จะ return double ที่เป็นราคาสินค้า
