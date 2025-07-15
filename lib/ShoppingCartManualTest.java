@@ -74,7 +74,7 @@ public class ShoppingCartManualTest {
             failedCount++;
         }  
 
-         // Test 5: มีส่วนลด BOGO กรณี  4 จ่าย 2
+         // Test 6: มีส่วนลด BOGO กรณี  4 จ่าย 2
          ArrayList<CartItem> promotionCodeCaseThree = new ArrayList<>();
          promotionCodeCaseThree.add(new CartItem("BOGO", "Bread", 25.0, 4)); // 50
          promotionCodeCaseThree.add(new CartItem("BOGO", "Milk", 15.0, 4));      // 30
@@ -87,7 +87,7 @@ public class ShoppingCartManualTest {
              failedCount++;
          }
 
-         // Test 5: มีส่วนลด BULK ของตั้งแต่ 6 ชิ้นขึ้นไป ลด 10%
+         // Test 7: มีส่วนลด BULK ของตั้งแต่ 6 ชิ้นขึ้นไป ลด 10%
          ArrayList<CartItem> promotionCodeBULKCaseOne = new ArrayList<>();
          promotionCodeBULKCaseOne.add(new CartItem("BULK", "Bread", 25.0, 6)); // 135
          promotionCodeBULKCaseOne.add(new CartItem("BULK", "Milk", 15.0, 6));      // 81
@@ -101,7 +101,7 @@ public class ShoppingCartManualTest {
          }
 
 
-        // Test 6: มีส่วนลด BULK แต่ของน้อยกว่า  6 
+        // Test 8: มีส่วนลด BULK แต่ของน้อยกว่า  6 
         ArrayList<CartItem> promotionCodeBULKCaseTwo = new ArrayList<>();
         promotionCodeBULKCaseTwo.add(new CartItem("BULK", "Bread", 25.0, 5)); // 125
         promotionCodeBULKCaseTwo.add(new CartItem("BULK", "Milk", 15.0, 5));      // 75
@@ -114,7 +114,7 @@ public class ShoppingCartManualTest {
             failedCount++;
         } 
 
-        // Test 7: มีส่วนลด BOGO แต่่มีของแค่ 1 ชิ้น
+        // Test 9: มีส่วนลด BOGO แต่่มีของแค่ 1 ชิ้น
         ArrayList<CartItem> promotionCodeCaseFour= new ArrayList<>();
         promotionCodeCaseFour.add(new CartItem("BOGO", "Bread", 25.0, 1)); // 25
         promotionCodeCaseFour.add(new CartItem("BOGO", "Milk", 15.0, 1));      // 15
